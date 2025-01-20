@@ -289,3 +289,9 @@ function displayQRCode() {
 
     qrCodeSection.classList.remove('hidden');
 }
+
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+}
+
