@@ -147,3 +147,30 @@ button:hover {
 .nav-links li a:hover {
     text-decoration: underline; /* Efek hover */
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Navbar menjadi kolom */
+        align-items: flex-start; /* Elemen rata kiri */
+    }
+
+    .nav-links {
+        display: none; /* Sembunyikan menu */
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex; /* Tampilkan menu saat aktif */
+    }
+
+    .hamburger {
+        display: block; /* Tampilkan tombol hamburger */
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+    }
+}
+
